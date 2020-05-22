@@ -1,0 +1,207 @@
+/* CSS For Jquery-UI Tabs */
+.ui-tabs .ui-tabs-nav li {
+  width: 19%;
+  text-align: center;
+}
+.ui-tabs .ui-tabs-nav li a {
+  display: inline-block;
+  float: none;
+  padding: 5px;
+  text-decoration: none;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 7px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #424242; /* grey darken-3 */
+}
+
+table {
+  width: 100%;
+  /* //margin-left: 5%; */
+  width: 120px;
+  margin-top: 2%;
+  background: #ffffff; /* white */
+  table-layout: fixed;
+}
+
+tr:hover {
+  background: #eeeeee; /* grey lighten-3 */
+}
+
+a {
+  color: #01579b; /* light-blue darken-4 */
+}
+
+th,
+th > a {
+  background-color: #007fff;
+  color: white;
+}
+
+table,
+td {
+  border: 1px solid #eeeeee; /* grey lighten-3 */
+}
+
+th,
+td {
+  /* max-width: 47px; */
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+th {
+  border: 1px solid #64b5f6; /* blue lighten-2 */
+}
+
+h6 {
+  font-size: 20px;
+}
+
+.set-cell-width {
+  max-width: 145px;
+}
+
+nav {
+  /* //background-color: #ED1D24;  Colgate Color */
+  background-color: #f44336;
+}
+
+/* Avoiding sidenav overlay cover .sidenav when in .navbar-fixed */
+.navbar-fixed {
+  z-index: 9999;
+}
+
+/* Offset your content by the width of the side menu */
+/* #output {
+	padding-left: 300px;
+} */
+
+@media only screen and (max-width: 992px) {
+  .navbar-fixed,
+  #output {
+    padding-left: 0;
+  }
+}
+
+.sidenav {
+  padding-top: 70px;
+}
+
+.brand-logo {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  margin: 4px;
+}
+
+.btn-flat {
+  margin: 4px;
+}
+
+.details {
+  color: #212121; /* grey darken-4 */
+}
+
+.details:hover {
+  color: #9e9e9e; /* grey */
+}
+
+.mod-ex {
+  color: #00bcd4;
+}
+
+.mod-ex:hover {
+  color: #3949ab; /* indigo darken-1 */
+}
+
+#approve {
+  background-color: #1e88e5; /* blue darken-1 */
+}
+#approve:hover {
+  background-color: #1565c0; /* blue darken-3 */
+}
+
+#reject {
+  background-color: #78909c; /* blue-grey lighten-1 */
+}
+#reject:hover {
+  background-color: #546e7a; /* blue-grey darken-1 */
+}
+
+#filter {
+  /* background-color: #ED1D24; */
+  background-color: #f44336;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cfd8dc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+p {
+  font-size: medium;
+}
+
+.material-icons,
+.icon-text {
+  vertical-align: middle;
+}
+
+.inline li:hover {
+  background: #424242 !important; /* grey darken-3 */
+}
+
+/* CSS For Loading */
+
+/* .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 0; top: 0; } */
+
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  /* background: url(../../../images/preloader.gif) center no-repeat #fff; */
+}
+
+/* CSS For card and its content */
+.sidenav-offset {
+  padding-left: 300px;
+  /* margin-left: 7px; */
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+@media only screen and (max-width: 992px) {
+  .sidenav-offset {
+    padding-left: 15px;
+  }
+}
+
+/* CSS for clicking a particular section on sidenav (here, for filter and search */
+.sidenav-selected {
+  box-shadow: 0 0 12px grey;
+  z-index: 2;
+  padding: 15px;
+}

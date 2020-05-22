@@ -1,0 +1,70 @@
+<!-- <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+  <label>Email</label>
+  <input type="text" formControlName="email" />
+  <br />
+  <label>Password</label>
+  <input type="password" name="password" formControlName="password" />
+  <br />
+  <button type="submit">Login</button>
+</form> -->
+
+<div class="con">
+  <div class="row">
+    <div class="col s6 offset-s3">
+      <div class="card hoverable">
+        <div class="card-title center-align">
+          <h4 class="white-text" style="padding: 15px;">
+            <i>Grievance Sahayak Login</i>
+          </h4>
+        </div>
+        <div class="card-content">
+          <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+              <div class="input-field col s11">
+                <i class="material-icons prefix">person</i>
+                <input
+                  id="user"
+                  name="user"
+                  type="text"
+                  class="validate"
+                  formControlName="email"
+                  required
+                />
+                <label for="user">Email</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s11">
+                <i class="material-icons prefix">lock</i>
+                <input
+                  id="pass"
+                  name="pass"
+                  type="password"
+                  class="validate"
+                  formControlName="password"
+                  required
+                />
+                <label for="pass">Password</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field center">
+                <button
+                  class="btn waves-effect waves-light"
+                  style="background-color: rgb(87, 83, 83);"
+                  type="submit"
+                  name="login"
+                  value="login"
+                >
+                  Login<i class="material-icons right">play_arrow</i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

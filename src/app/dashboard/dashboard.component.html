@@ -1,0 +1,64 @@
+<div class="grey lighten-3">
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a data-target="slide-out" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <a
+          href="#!"
+          class="brand-logo center"
+          style="font-size: 25px; color: white;"
+          ><span class="hide-on-small-only">Console</span></a
+        >
+        <ul class="right">
+          <li class="hide-on-med-and-down" style="margin-right: 10px;">
+            Welcome
+          </li>
+          <li>
+            <a class="red accent-4" title="Log Out"
+              ><i class="material-icons white-text">power_settings_new</i></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav sidenav-fixed grey darken-1">
+    <li>
+      <a routerLink="./home" class="white-text search-selected"
+        ><i class="material-icons white-text">home</i>Home</a
+      >
+    </li>
+    <li>
+      <a routerLink="./search" class="white-text search-selected"
+        ><i class="material-icons white-text">search</i>Search</a
+      >
+    </li>
+    <li>
+      <a routerLink="./create" class="white-text"
+        ><i class="material-icons white-text">web</i>New Grievance</a
+      >
+    </li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader white-text">Alerts</a></li>
+    <li id="notifications">
+      <a href="#!" class="white-text"
+        ><i class="material-icons white-text">notifications</i>Notifications
+
+        <span class="new badge red"> </span>
+      </a>
+    </li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader white-text">Account</a></li>
+    <li>
+      <a class="waves-effect white-text" (click)="logout()"
+        ><i class="material-icons white-text">power_settings_new</i>Sign Out</a
+      >
+    </li>
+  </ul>
+  <div class="sidenav-offset">
+    <router-outlet></router-outlet>
+  </div>
+</div>
